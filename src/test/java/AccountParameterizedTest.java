@@ -6,7 +6,7 @@ import org.junit.runners.Parameterized;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
-@DisplayName("Проверка метода checkNameToEmboss")
+@DisplayName("Параметризированный тест метода checkNameToEmboss")
 public class AccountParameterizedTest {
     private final String name;
     private final boolean expected;
