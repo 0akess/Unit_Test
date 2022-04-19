@@ -35,6 +35,6 @@ public class AccountParameterizedTest {
         Account account = new Account(name);
         boolean actual = account.checkNameToEmboss();
         System.out.println(actual);
-        assertEquals(expected, actual);
+        assertEquals("Метод неверно обработал значение", expected, actual);
     }
 }
