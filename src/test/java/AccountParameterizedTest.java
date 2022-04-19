@@ -20,7 +20,7 @@ public class AccountParameterizedTest {
     public static Object[][] getResult() {
         return new Object[][] {
                 {"два  пробела", false},
-                {"правильный вариант", true},
+                {"правильныйвариант", true},
                 {" пробел в_начале", false},
                 {"тр", false},
                 {" пробел", false},
@@ -35,6 +35,6 @@ public class AccountParameterizedTest {
         Account account = new Account(name);
         boolean actual = account.checkNameToEmboss();
         System.out.println(actual);
-        assertEquals("Метод неверно обработал значение", expected, actual);
+        assertEquals("Метод неверно обработал значение: " + expected, expected, actual);
     }
 }
