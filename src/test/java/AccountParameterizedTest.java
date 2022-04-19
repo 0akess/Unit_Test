@@ -20,7 +20,7 @@ public class AccountParameterizedTest {
     public static Object[][] getResult() {
         return new Object[][] {
                 {"два  пробела", false},
-                {"правильныйвариант", true},
+                {"правильный вариант", true},
                 {" пробел в_начале", false},
                 {"тр", false},
                 {" пробел", false},
