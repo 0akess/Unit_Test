@@ -7,7 +7,7 @@ public class Account {
         this.name = name;
     }
 
-    @Step("Проверка имени")
+    @Step("Проверка строки на возможность напечатать её на карте")
     public boolean checkNameToEmboss() {
 
         return name.length() >= 3
