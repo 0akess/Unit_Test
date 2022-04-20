@@ -1,3 +1,5 @@
+import io.qameta.allure.Step;
+
 public class Account {
     private final String name;
 
@@ -5,6 +7,7 @@ public class Account {
         this.name = name;
     }
 
+    @Step("Проверка имени")
     public boolean checkNameToEmboss() {
 
         return name.length() >= 3
